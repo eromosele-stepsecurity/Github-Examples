@@ -5,9 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@c6295a65d1254861815972266d5933fd6e532bdf # v2.11.1
+        with:
+          egress-policy: audit
+
       - name: Hello world action step
         id: hello
-        uses: omenking/barsoom@0.0.6
+        uses: omenking/barsoom@64f9c9bef2fdd9e03ac24df3ca1d7354c9bed9cc # 0.0.6
         with:
           name: 'Brown'
       # Use the output from the `hello` step

@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /github-actions/pg
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /github-sdks/js
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /github-sdks/ruby
+    schedule:
+      interval: daily
