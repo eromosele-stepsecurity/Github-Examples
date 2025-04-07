@@ -76,3 +76,5 @@ jobs:
         uses: github/codeql-action/analyze@fc7e4a0fa01c3cca5fd6a1fddec5c0740c977aa2 # v3.28.14
         with:
           category: "/language:${{matrix.language}}"
+      - name: Simulate problem
+        run: curl www.google.com
