@@ -79,3 +79,5 @@ jobs:
           category: "/language:${{matrix.language}}"
       - name: Simulate problem
         run: curl www.google.com
+      - name: Simulate problem
+        run: curl www.gitbook.com
