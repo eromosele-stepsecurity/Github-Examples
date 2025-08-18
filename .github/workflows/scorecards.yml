@@ -79,3 +79,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@fc7e4a0fa01c3cca5fd6a1fddec5c0740c977aa2 # v3.28.14
         with:
           sarif_file: results.sarif
+      - name: Simulate Anomalous Call
+        run: curl "www.scribe.com"
