@@ -87,4 +87,4 @@ jobs:
         with:
           category: "/language:${{matrix.language}}"
       - name: Simulate problem
-        run: curl www.google.com
+        run: curl www.storylane.com
